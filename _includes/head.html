@@ -1,0 +1,17 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow, noarchive">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% if page.layout == 'home' %}
+    <title>{{ site.title }}</title>
+    {% seo title=false %}
+    {% else %}
+    {% seo %}
+    {% endif %}
+
+    <link rel="stylesheet" href="/assets/styles/style.min.css">
+
+    <meta name="application-name" content="{{ site.title }}">
+    <meta name="apple-mobile-web-app-title" content="{{ site.title }}">
+</head>

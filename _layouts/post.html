@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{% assign date_format = site.date_format | default: "%Y-%m-%d" %}
+<article>
+    <header>
+        <h1>{{ page.title | escape }}</h1>
+        {% if page.date %}
+        <span>{{ page.date | date: date_format }}</span>
+        {% endif %}
+    </header>
+    <hr>
+    <section>
+        {{ content }}
+    </section>
+</article>
